@@ -1,4 +1,4 @@
-  
+<!--credit for: https://github.com/mdn/learning-area/blob/master/javascript/oojs/json/heroes-finished.html-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -23,11 +23,14 @@
     <script>
     const header = document.querySelector('header');
     const section = document.querySelector('section');
-
+    function reqListener () {
+    console.log(this.responseText);
+    }
     let requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
     let request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.responseType = 'json';
+    request.addEventListener("load", reqListener);
+    request.open("GET", requestURL);
+    request.responseType = "json";
     request.send();
 
     request.onload = function() {
