@@ -1,0 +1,19 @@
+{
+    "Team Name":"Happy hippy",
+    "Team Rank":"E",
+    "Home City":"Baka City",
+    "members":[
+    {
+        "Name":"Peter",
+        "Level": "1",
+        "Class": "Warrior",
+        "skill":["Slash"] 
+    },
+    {
+        "Name":"Hary",
+        "Level":"1",
+        "Class":"Priest",
+        "skill":"Heal"
+    }
+    ]
+}
